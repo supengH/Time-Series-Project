@@ -8,4 +8,6 @@ In this project, I need to finish two main tasks. First is forecasting and the s
 ### 2. Exploratory analysis
 In this part, we first plot the return as well as its ACF/PACF. Since we need a stationary time series for the ARMA and the following hybrid model, adf test is used to determine the order of differencing.
 ### 3. ARMA model
-In this part, we first use the AIC standard to choose the order of p,q. Then we do model diagnosis, note that the model with minimum AIC is not neccessary an appropriate model for the series. 
+In this part, we first use the AIC standard to choose the order of p,q. Then we do model diagnosis, note that the model with minimum AIC is not neccessary an appropriate model for the series. We need to do diagnosis and check for the independence and normality of residuals. Based on the pattern of the residuals, we also fit a GARCH model.
+### 4. Hybrid model
+
