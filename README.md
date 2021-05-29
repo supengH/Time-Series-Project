@@ -14,3 +14,5 @@ The problem with the ARMA and GARCH model is that they assume a linear relations
 In this part, I propose two hybrid models with details in the report. The hybrid model actually cannot improve much accurancy.
 ### 5. Portfolio construction
 Based on the forecast we get from the hybrid model, we use the Markowitz’s Modern Portfolio Theory to maximize the Sharpe Ratio. I have also applied a exponential decay function to the sample covariance so that weights assigned to observations are declining as they go further back in time. 
+
+The picture in numbers are forecasting plots.
