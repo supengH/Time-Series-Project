@@ -10,4 +10,7 @@ In this part, we first plot the return as well as its ACF/PACF. Since we need a 
 ### 3. ARMA model
 In this part, we first use the AIC standard to choose the order of p,q. Then we do model diagnosis, note that the model with minimum AIC is not neccessary an appropriate model for the series. We need to do diagnosis and check for the independence and normality of residuals. Based on the pattern of the residuals, we also fit a GARCH model.
 ### 4. Hybrid model
-
+The problem with the ARMA and GARCH model is that they assume a linear relationship among variables and thus can only capture very little trend movement, its prediction is very close to the mean of the return. Therefore, to better predict the trend movement, we consider adding the Support Vector Machine to capture the nonlinear component in the trend movement.
+In this part, I propose two hybrid models with details in the report. The hybrid model actually cannot improve much accurancy.
+### 5. Portfolio construction
+Based on the forecast we get from the hybrid model, we use the Markowitz’s Modern Portfolio Theory to maximize the Sharpe Ratio. I have also applied a exponential decay function to the sample covariance so that weights assigned to observations are declining as they go further back in time. 
